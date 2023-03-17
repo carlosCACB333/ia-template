@@ -1,0 +1,16 @@
+name: {{cookiecutter.project_slug}}-env
+channels:
+  - conda
+  - conda-forge
+  - defaults
+dependencies:
+  - python={{cookiecutter.python_version}}
+  - pip
+  {% if cookiecutter.project_packages == "yes" -%}
+  - jupyter
+  - jupyterlab
+  {% endif -%}
+  - pip:
+    {% if cookiecutter.project_packages == "yes" -%}
+    - pyhere
+    {% endif -%}

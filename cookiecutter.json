@@ -5,5 +5,5 @@
   "author_name": "Carlos Castillo Blas",
   "author_email": "carloscb8080@gmail.com",
   "project_packages": ["yes", "no"],
-  "python_version": "3.11"
+  "python_version": "3.9"
 }

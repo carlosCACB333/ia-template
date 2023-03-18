@@ -7,6 +7,7 @@ dependencies:
   - python={{cookiecutter.python_version}}
   - pip
   {% if cookiecutter.project_packages == "yes" -%}
+  - jupyter
   - pandas
   - numpy
   - matplotlib

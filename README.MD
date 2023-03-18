@@ -9,5 +9,5 @@ requerimientos de instalación
 **instalación:**
 
 ```bash
-cookiecutter https://github.com/carloscb8080/ia-template
+cookiecutter https://github.com/carlosCACB333/ia-template
 ```

@@ -1,9 +1,9 @@
-name: ia-template-env
+name: ia-template
 channels:
   - anaconda
   - conda-forge
   - defaults
 dependencies:
   - cookiecutter
-prefix: /home/carlos/miniconda3/envs/ia-template-env
+prefix: /home/carlos/miniconda3/envs/ia-template
 

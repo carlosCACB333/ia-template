@@ -15,7 +15,7 @@ def main() -> None:
     comands = [
         "git init",
         "git add .",
-        "git commit -m 'Initial commit'",
+        'git commit -m "Initial commit"',
         "conda env create -f environment.yml",
     ]
     for idx, command in enumerate(comands, start=1):
@@ -25,7 +25,7 @@ def main() -> None:
     Your project is ready to go!
     To activate the environment run:
     $ cd {{ cookiecutter.project_slug }}
-    $ conda activate {{ cookiecutter.project_slug }}-env \n\n
+    $ conda activate {{ cookiecutter.project_slug }} \n\n
     {RESET_ALL}
     """
     print(msg)

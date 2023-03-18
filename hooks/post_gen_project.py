@@ -24,6 +24,7 @@ def main() -> None:
     msg = f"""{GREEN_COLOR}
     Your project is ready to go!
     To activate the environment run:
+    $ cd {{ cookiecutter.project_slug }}
     $ conda activate {{ cookiecutter.project_slug }}-env \n\n
     {RESET_ALL}
     """

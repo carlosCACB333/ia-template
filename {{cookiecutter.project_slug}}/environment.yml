@@ -7,8 +7,12 @@ dependencies:
   - python={{cookiecutter.python_version}}
   - pip
   {% if cookiecutter.project_packages == "yes" -%}
-  - jupyter
-  - jupyterlab
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - tensorflow
   {% endif -%}
   - pip:
     {% if cookiecutter.project_packages == "yes" -%}

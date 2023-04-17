@@ -4,11 +4,14 @@ import subprocess
 BLUE_COLOR = '\x1b[34m'
 GREEN_COLOR = '\033[1;32m'
 RESET_ALL = '\x1b[0m'
-
+RED_COLOR = '\033[1;31m'
 
 def run_command(command: str, idx=1) -> None:
-    print(f"{BLUE_COLOR}{idx}. Running command: {command}{RESET_ALL}")
-    subprocess.run(command, shell=True, check=True)
+    try:
+        print(f"{BLUE_COLOR}{idx}. Running command: {command}{RESET_ALL}")
+        subprocess.run(command, shell=True, check=True)
+    except Exception as e:
+        print(f"{RED_COLOR}Error: {e}{RESET_ALL}")
 
 
 def main() -> None:

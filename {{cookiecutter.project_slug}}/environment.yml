@@ -5,17 +5,15 @@ channels:
   - defaults
 dependencies:
   - python={{cookiecutter.python_version}}
-  - pip
-  {% if cookiecutter.project_packages == "yes" -%}
+  {% if cookiecutter.project_packages == "jupyter" -%}
   - jupyter
-  - pandas
+  {% endif -%}
+  {% if cookiecutter.project_packages == "all" -%}
+  - jupyter
   - numpy
+  - pandas
   - matplotlib
   - seaborn
   - scikit-learn
   - tensorflow
   {% endif -%}
-  - pip:
-    {% if cookiecutter.project_packages == "yes" -%}
-    - pyhere
-    {% endif -%}

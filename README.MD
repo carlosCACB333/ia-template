@@ -2,11 +2,16 @@
 
 requerimientos de instalación
 
-- conda
+- [Anconda navigator](https://www.anaconda.com/products/distribution) (Agregar conda al path)
 - cookiecutter
-- git
 
-**instalación:**
+  ```bash
+  conda install -c conda-forge cookiecutter
+  ```
+
+- [git](https://git-scm.com/downloads)
+
+**Creación de proyecto**
 
 ```bash
 cookiecutter https://github.com/carlosCACB333/ia-template

@@ -4,6 +4,6 @@
   "project_description": "My artificial intelligence project",
   "author_name": "Carlos Castillo Blas",
   "author_email": "carloscb8080@gmail.com",
-  "project_packages": ["yes", "no"],
+  "project_packages": ["python","jupyter","all"],
   "python_version": "3.9"
 }
